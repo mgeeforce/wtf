@@ -1,0 +1,12 @@
+<article class="index-article archive-type-<%= post.layout %>">
+  <div class="index-article-inner">
+    <div id="index-article-header">
+      <%- partial('post/index-date', {class_name: 'index-article-date', date_format: 'MMM D'}) %>
+      <%- partial('post/title', {class_name: 'index-article-title'}) %>
+    </div>
+    <footer class="index-article-footer">
+      <a data-url="<%- post.permalink %>" data-id="<%= post._id %>" class="index-article-share-link">Share</a>
+      <%- partial('post/index-tag') %>
+    </footer>
+  </div>
+</article>

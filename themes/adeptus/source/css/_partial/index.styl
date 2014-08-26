@@ -1,0 +1,98 @@
+.indices
+  clearfix()
+  padding-left: 5.5em
+
+.index-year-wrap
+  display: inline-block
+  float: left
+  position: relative
+  top: 1em
+  h2
+    font-size: 1.9em
+
+.index-year
+  @extend $block-caption
+
+.index-article
+  avoid-column-break()
+  time
+    text-transform: uppercase
+    text-align: right
+    float: left
+    font-size: 1.4em
+    line-height: 2.3em
+    color: gray
+
+.index-article-inner
+  padding: 10px
+  margin-bottom: 15px
+
+.index-article-title
+  text-decoration: none
+  font-weight: normal
+  font-size: 1.9em
+  color: color-default
+  transition: color 0.2s
+  line-height: line-height
+  &:hover
+    color: color-link
+    
+#index-article-header
+	h1
+	  padding-left: 7em
+	  
+.index-article-footer
+  margin-top: 1em
+
+.index-article-date
+  color: color-grey
+  text-decoration: none
+  font-size: 0.85em
+  line-height: 1em
+  margin-bottom: 0.5em
+  display: block
+  
+.index-article-category
+  float: right
+  margin-right: 13.5em
+  line-height: line-height
+  color: color-grey
+  text-shadow: 0 1px #fff
+  margin-left: 8px
+
+
+.index-article-category-link
+  //@extend $block-caption
+  margin: 0 12px 1em
+  
+.index-article-tag-list-item
+  float: left
+  margin-right: 10px
+
+.index-article-tag-list-link
+  &:before
+    content: "#"
+  
+.index-article-footer
+  clearfix()
+  font-size: 0.85em
+  line-height: line-height
+  border-top: 0px solid color-border
+  padding-top: line-height
+  //margin: 0 article-padding article-padding
+  margin: 0 8.6em article-padding
+  a
+    color: color-grey
+    text-decoration: none
+    &:hover
+      color: color-red
+
+.index-article-share-link
+  cursor: pointer
+  float: right
+  line-height: line-height
+  margin-left: 20px
+  &:before
+    content: "\f064"
+    font-family: font-icon
+    padding-right: 6px

@@ -1,0 +1,11 @@
+<% if (post.categories && post.categories.length){ %>
+  <div class="index-article-category">
+    filed under: 
+    <%- list_categories(post.categories, {
+      show_count: false,
+      class: 'index-article-category',
+      style: 'none',
+      separator: '►'
+    }) %>
+  </div>
+<% } %>
