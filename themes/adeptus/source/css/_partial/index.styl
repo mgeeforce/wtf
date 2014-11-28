@@ -1,6 +1,7 @@
 .indices
   clearfix()
   padding-left: 5.5em
+  font-family: 'Open Sans', sans-serif
 
 .index-year-wrap
   display: inline-block
@@ -20,12 +21,16 @@
     text-align: right
     float: left
     font-size: 1.4em
-    line-height: 2.3em
+    //line-height: 2.3em
     color: gray
+    padding-top: .5em
+
+.index-article-header
 
 .index-article-inner
   padding: 10px
   margin-bottom: 15px
+  border-bottom: 1px gray solid
 
 .index-article-title
   text-decoration: none
@@ -36,13 +41,10 @@
   line-height: line-height
   &:hover
     color: color-link
-    
+
 #index-article-header
 	h1
 	  padding-left: 7em
-	  
-.index-article-footer
-  margin-top: 1em
 
 .index-article-date
   color: color-grey
@@ -51,7 +53,7 @@
   line-height: 1em
   margin-bottom: 0.5em
   display: block
-  
+
 .index-article-category
   float: right
   margin-right: 13.5em
@@ -64,7 +66,7 @@
 .index-article-category-link
   //@extend $block-caption
   margin: 0 12px 1em
-  
+
 .index-article-tag-list-item
   float: left
   margin-right: 10px
@@ -72,15 +74,15 @@
 .index-article-tag-list-link
   &:before
     content: "#"
-  
+
 .index-article-footer
   clearfix()
   font-size: 0.85em
   line-height: line-height
   border-top: 0px solid color-border
-  padding-top: line-height
+  //padding-top: 1em
   //margin: 0 article-padding article-padding
-  margin: 0 8.6em article-padding
+  //margin: 0 8.6em article-padding
   a
     color: color-grey
     text-decoration: none
