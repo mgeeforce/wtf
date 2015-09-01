@@ -4,21 +4,24 @@ tags: treebeard
 ---
 ![machines](machines.png)
 
-Here are the use cases:
+Here are the use cases (and credits):
 
-* [Treebeard](http://lotr.wikia.com/wiki/Treebeard)
+* Treebeard (Fangorn) - SmartOS Global Zone
 	* Hypervisor
 	* ZFS
-* [Lindenroot](http://lotr.wikia.com/wiki/Lindenroot) 
+* Lindenroot - SmartOs Zone
 	* FIFO
-* [Birchseed](http://lotr.wikia.com/wiki/Birchseed)
-	* AFP
-* [Leaflock](http://lotr.wikia.com/wiki/Leaflock)
+* Birchseed - SmartOs Zone
+	* AFP (TimeMachine destination) 
+* Leaflock (Finglas) - CentOS 7 KVM
 	* Plex Media Server
 	* GitLab
 	* Jenkins
-* [Quickbeam](http://lotr.wikia.com/wiki/Quickbeam)
-	* App Server
-
+* Quickbeam (Bregalad) - SmartOS Zone
+	* Apache or Nginx http and Play Netty NIO server 
+* Wandlimb (Fimbrethil) - SmartOS Zone
+	* Postgresql Database Server
+* Skinbark (Fladrif) - TBD
+* Beechbone - TBD
 
 [LOTR Reference](http://lotr.wikia.com/wiki/Ents)
