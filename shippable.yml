@@ -2,24 +2,25 @@
 language: node_js
 
 # version number
-node_js: 0.11
+node_js: 
+- 0.11
 
 branches:
   only:
   - master
 
 before_install:
-- shippable-retry npm install hexo-cli
-- shippable-retry npm install hexo --save
-- shippable-retry npm install hexo-generator-archive --save
-- shippable-retry npm install hexo-generator-category --save
-- shippable-retry npm install hexo-generator-index --save
-- shippable-retry npm install hexo-generator-tag --save
-- shippable-retry npm install hexo-renderer-ejs --save
-- shippable-retry npm install hexo-renderer-marked --save
-- shippable-retry npm install hexo-renderer-stylus --save
-- shippable-retry npm install hexo-deployer-git --save
-- shippable-retry npm install
+- npm install hexo-cli
+- npm install hexo --save
+- npm install hexo-generator-archive --save
+- npm install hexo-generator-category --save
+- npm install hexo-generator-index --save
+- npm install hexo-generator-tag --save
+- npm install hexo-renderer-ejs --save
+- npm install hexo-renderer-marked --save
+- npm install hexo-renderer-stylus --save
+- npm install hexo-deployer-git --save
+- npm install
 
 before_script:
 - git config --global user.name 'Mike Gee'
@@ -28,8 +29,10 @@ before_script:
 
 install:
   - hexo generate
-  script:
-  - hexo deploy -silent
+
+script:
+  - hexo deploy --silent
+
 env:
   global:
   - secure: GswdCEg1JSZW0Dyik/Yjlm31g8lj6926RfCUG+nbqZX0q40vTrFIvLOu8urtDZtWDutI6qfeORW2gHvZ7jasLwPk3nehpzV7kjgwsDF7vFomufs49w9cPcxm+JeyRH507hFb10qdPu+dbFAYBMNBv7epePMVQ1DCST8+myz2VBTQ/VeDx/p7FZE74jAaYUAxiyjkYwLVNxr7hkxYxZd61svF9SvP+BbF+4tt7MUWQIXOtXn07AcHPDkSZIVRUp6A9JqKlpFca6ZAITJazpi94fF5MDguWyOmHeyv2WBKQjammStaYz62Yt7yjfciW1UOHqho8F286XeZNXfi6JSBqQ==
