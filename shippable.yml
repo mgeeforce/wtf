@@ -31,7 +31,7 @@ install:
   - hexo generate
 
 script:
-  - hexo deploy
+  - hexo deploy --silent
 
 env:
   global:
